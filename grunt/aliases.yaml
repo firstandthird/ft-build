@@ -1,0 +1,19 @@
+'script-dist':
+  - 'concat:dist'
+  - 'uglify:dist'
+'script-full':
+  - 'concat:full'
+  - 'uglify:full'
+default:
+  - 'jshint'
+  - 'bower'
+  - 'scripts'
+  - 'clean:bower'
+  - 'mocha'
+  - 'bytesize'
+  - 'notify:generic'
+dev:
+  - 'bower'
+  - 'connect:server'
+  - 'notify:watch'
+  - 'watch'
