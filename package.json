@@ -1,6 +1,6 @@
 {
   "name": "fatjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library for grunt to build First + Third javascript libaries",
   "main": "index.js",
   "author": "First + Third",
