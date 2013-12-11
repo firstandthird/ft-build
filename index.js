@@ -12,8 +12,11 @@ module.exports = function(grunt, obj) {
       info: grunt.file.readJSON('bower.json'),
       libName: libName,
       fullLibName: fullLibName
-    }
+    },
+    loadGruntTasks: false
   });
+
+  grunt.file.expand(path.join(__dirname, 'node_modules/grunt-*/tasks')).forEach(grunt.loadTasks);
 
   if (obj.full === false) {
     grunt.registerTask('scripts', ['script-dist']);
