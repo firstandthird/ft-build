@@ -5,7 +5,7 @@ lib:
     - '<%= jshint.lib %>'
   tasks:
     - 'jshint'
-    - 'script-dist'
+    - 'scripts'
     - 'mocha'
     - 'notify:tests'
 test:
