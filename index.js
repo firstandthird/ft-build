@@ -11,7 +11,8 @@ module.exports = function(grunt, obj) {
       name: obj.name,
       info: grunt.file.readJSON('bower.json'),
       libName: libName,
-      fullLibName: fullLibName
+      fullLibName: fullLibName,
+      bowerExclude: obj.bowerExclude || []
     },
     loadGruntTasks: false
   });
