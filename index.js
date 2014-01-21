@@ -12,7 +12,9 @@ module.exports = function(grunt, obj) {
       info: grunt.file.readJSON('bower.json'),
       libName: libName,
       fullLibName: fullLibName,
-      bowerExclude: obj.bowerExclude || []
+      bowerExclude: obj.bowerExclude || [],
+      fatjsPath: __dirname,
+      jshintStylish: require('jshint-stylish')
     },
     loadGruntTasks: false
   });

@@ -1,3 +1,6 @@
+options:
+  reporter: <%= jshintStylish %>
+  jshintrc: <%= fatjsPath %>/.jshintrc
 tools:
   - Gruntfile.js
   - bower.json
