@@ -1,4 +1,11 @@
 module.exports = function(grunt, obj) {
+  //update notifier
+  var updateNotifier = require('update-notifier');
+  var notifier = updateNotifier();
+
+  if (notifier.update) {
+      notifier.notify();
+  }
 
   var path = require('path');
 
