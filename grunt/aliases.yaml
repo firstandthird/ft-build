@@ -4,9 +4,11 @@ scriptFull:
   - concat:full
 test:
   - jshint:test
+  #- jscs:test
   - mocha
 lib:
   - jshint:lib
+  #- jscs:lib
   - bower
   - scripts
   - clean:bower
