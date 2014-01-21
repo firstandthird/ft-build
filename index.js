@@ -19,9 +19,9 @@ module.exports = function(grunt, obj) {
   grunt.file.expand(path.join(__dirname, 'node_modules/grunt-*/tasks')).forEach(grunt.loadTasks);
 
   if (obj.full === false) {
-    grunt.registerTask('scripts', ['script-dist']);
+    grunt.registerTask('scripts', ['scriptLib']);
   } else {
-    grunt.registerTask('scripts', ['script-dist', 'script-full']);
+    grunt.registerTask('scripts', ['scriptLib', 'scriptFull']);
   }
 
 };

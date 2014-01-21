@@ -1,19 +1,27 @@
-'script-dist':
-  - 'concat:dist'
-  - 'uglify:dist'
-'script-full':
-  - 'concat:full'
-  - 'uglify:full'
-default:
-  - 'jshint'
-  - 'bower'
-  - 'scripts'
-  - 'clean:bower'
-  - 'mocha'
-  - 'bytesize'
-  - 'notify:generic'
+scriptLib:
+  - concat:lib
+scriptFull:
+  - concat:full
+test:
+  - jshint:test
+  - mocha
+lib:
+  - jshint:lib
+  - bower
+  - scripts
+  - clean:bower
+  - test
+dist:
+  - clean:dist
+  - lib
+  - uglify
+  - bytesize
 dev:
-  - 'bower'
-  - 'connect:server'
-  - 'notify:watch'
-  - 'watch'
+  - lib
+  - connect:server
+  - watch
+tools:
+  - jshint:tools
+default:
+  - tools
+  - dist

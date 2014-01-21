@@ -1,7 +1,8 @@
-build:
-  - 'Gruntfile.js'
-  - 'bower.json'
+tools:
+  - Gruntfile.js
+  - bower.json
+  - package.json
 lib:
-  - 'lib/**/*.js'
+  - lib/**/*.js
 test:
-  - 'test/*.js'
+  - test/*.js
