@@ -1,6 +1,6 @@
 {
   "name": "ft-build",
-  "version": "0.3.0-beta.1",
+  "version": "0.3.0-beta.2",
   "description": "Library for grunt to build First+Third projects",
   "main": "index.js",
   "author": "First+Third",
