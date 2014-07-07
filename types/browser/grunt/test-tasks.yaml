@@ -1,0 +1,27 @@
+aliases:
+  - 'jshint:test'
+  #- jscs:test
+  - 'mocha'
+  - 'notify:test'
+jshint:
+  - 'test/*.js'
+jscs:
+  - 'test/*.js'
+mocha:
+  options:
+    run: true
+    growl: true
+    reporter: 'Spec'
+    log: true
+  src: 'test/index.html'
+watch:
+  files:
+    - '<%= jshint.test %>'
+    - 'test/index.html'
+  tasks:
+    - 'jshint:test'
+    - 'mocha'
+    - 'notify:test'
+notify:
+  options:
+    message: 'Tests complete'

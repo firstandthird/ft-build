@@ -1,0 +1,33 @@
+aliases:
+  - 'jshint:scripts'
+  #- jscs:lib
+  - 'bower'
+  - 'concat'
+  - 'clean:scripts'
+  - 'test'
+jshint:
+  - 'lib/**/*.js'
+jscs:
+  - 'lib/**/*.js'
+bower:
+  dest: 'dist/_bower.js'
+  exclude:
+    - 'jquery'
+clean:
+  - 'dist/_bower.js'
+concat:
+  options:
+    banner: '<%= meta.banner %>'
+  files:
+    'dist/<%= name %>.bower.js':
+      - 'lib/<%= name %>.js'
+      - 'lib/<%= name %>-*.js'
+    'dist/<%= name %>.js':
+      - 'dist/_bower.js'
+      - 'lib/<%= name %>.js'
+      - 'lib/<%= name %>-*.js'
+watch:
+  files:
+    - '<%= jshint.scripts %>'
+  tasks:
+    - 'lib'

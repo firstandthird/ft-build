@@ -1,26 +1,14 @@
 {
-  "name": "fatjs",
+  "name": "ft-build",
   "version": "0.2.0",
-  "description": "Library for grunt to build First + Third javascript libaries",
+  "description": "Library for grunt to build First+Third projects",
   "main": "index.js",
-  "author": "First + Third",
+  "author": "First+Third",
   "license": "MIT",
   "dependencies": {
-    "grunt": "~0.4.1",
-    "grunt-bytesize": "~0.1.0",
-    "grunt-concat-bower": "~0.3.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-uglify": "~0.3.1",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-mocha": "~0.4.1",
-    "load-grunt-config": "~0.7.0",
+    "load-grunt-config": "~0.12.0",
     "update-notifier": "~0.1.7",
-    "jshint-stylish": "~0.1.5",
-    "grunt-jscs-checker": "~0.3.2"
+    "jshint-stylish": "^0.2.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

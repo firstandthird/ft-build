@@ -1,0 +1,16 @@
+aliases:
+  - 'less'
+  - 'autoprefixer'
+less:
+  files:
+    'dist/<%= name %>.less': 'less/<%= name %>.less'
+    'example/css.css': 'example/css.less'
+autoprefixer:
+  files:
+    - 'example/css.css': 'example/css.css'
+watch:
+  files:
+    - 'less/**/*.less'
+    - 'example/*.less'
+  tasks:
+    - 'styles'

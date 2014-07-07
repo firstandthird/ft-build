@@ -1,0 +1,8 @@
+aliases:
+  - 'tools'
+  - 'example'
+  - 'scripts'
+  - 'styles'
+notify:
+  options:
+    message: 'Build complete'

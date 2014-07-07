@@ -1,0 +1,10 @@
+aliases:
+  - 'default'
+  - 'connect'
+  - 'watch'
+connect:
+  options:
+    hostname: '*'
+    useAvailablePort: true
+    open: true
+    livereload: '<%= livereloadPort %>'

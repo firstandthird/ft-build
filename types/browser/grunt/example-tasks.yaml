@@ -1,0 +1,10 @@
+aliases:
+  - 'jshint:example'
+jshint:
+  - 'example/*.js'
+watch:
+  options:
+    livereload: <%= livereloadPort %>
+  files:
+    - 'example/*'
+    - 'dist/*'

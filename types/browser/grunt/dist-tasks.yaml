@@ -1,0 +1,16 @@
+aliases:
+  - 'clean:dist'
+  - 'default'
+  - 'uglify'
+  - 'bytesize'
+clean:
+  - 'dist'
+bytesize:
+  src:
+    - 'dist/*'
+uglify:
+  options:
+    banner: '<%= meta.banner %>'
+  files:
+    'dist/<%= name %>.bower.min.js': 'dist/<%= name %>.bower.js'
+    'dist/<%= name %>.min.js': 'dist/<%= name %>.js'

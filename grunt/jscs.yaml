@@ -1,6 +1,0 @@
-options:
-  config: <%= fatjsPath %>/.jscs.json
-lib:
-  - lib/**/*.js
-test:
-  - test/*.js
