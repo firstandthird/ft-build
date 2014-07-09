@@ -30,4 +30,4 @@ watch:
   files:
     - '<%= jshint.scripts %>'
   tasks:
-    - 'lib'
+    - 'scripts'
