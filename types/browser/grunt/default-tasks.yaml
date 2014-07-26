@@ -3,6 +3,8 @@ aliases:
   - 'example'
   - 'scripts'
   - 'styles'
+  - 'connect:test'
+  - 'test'
 notify:
   options:
     message: 'Build complete'

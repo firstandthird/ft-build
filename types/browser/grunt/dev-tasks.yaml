@@ -1,6 +1,6 @@
 aliases:
   - 'default'
-  - 'connect'
+  - 'connect:dev'
   - 'watch'
 connect:
   options:
