@@ -1,10 +1,14 @@
 var checkRequires = require('./lib/check-requires');
 var updateNotifier = require('update-notifier');
 var path = require('path');
+var pkg = require('./package.json');
 
 module.exports = function(type, grunt, obj) {
   //update notifier
-  var notifier = updateNotifier();
+  var notifier = updateNotifier({
+    packageName: pkg.name,
+    packageVersion: pkg.version
+  });
 
   if (notifier.update) {
     notifier.notify();
