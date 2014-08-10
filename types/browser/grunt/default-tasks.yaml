@@ -1,9 +1,9 @@
 aliases:
+  - 'connect:dev'
   - 'tools'
   - 'example'
   - 'scripts'
   - 'styles'
-  - 'connect:test'
   - 'test'
 notify:
   options:

@@ -7,10 +7,6 @@ jshint:
   - 'test/*.js'
 jscs:
   - 'test/*.js'
-connect:
-  options:
-    hostname: '*'
-    port: '8999'
 mocha:
   options:
     run: true
@@ -18,7 +14,7 @@ mocha:
     reporter: 'Spec'
     log: true
     urls: 
-      - 'http://localhost:8999/test/'
+      - 'http://localhost:<%= port %>/test/'
 watch:
   files:
     - '<%= jshint.scripts %>'
