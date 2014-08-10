@@ -1,4 +1,10 @@
 
+0.3.0-beta.5 / 2014-08-10 
+==================
+
+  * [browser] pass in port for connect
+  * update deps
+
 0.3.0-beta.4 / 2014-07-26 
 ==================
 
