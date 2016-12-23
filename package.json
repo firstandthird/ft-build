@@ -6,9 +6,9 @@
   "author": "First+Third",
   "license": "MIT",
   "dependencies": {
-    "load-grunt-config": "^0.13.0",
-    "update-notifier": "^0.2.0",
-    "jshint-stylish": "^0.4.0"
+    "load-grunt-config": "^0.19.2",
+    "update-notifier": "^1.0.3",
+    "jshint-stylish": "^2.2.1"
   },
   "devDependencies": {}
 }
